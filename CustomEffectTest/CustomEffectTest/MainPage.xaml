@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:effects="clr-namespace:CustomEffectTest.Effects"
+             x:Class="CustomEffectTest.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="please dont change my font!"></ToolbarItem>
+        <ToolbarItem Text="ﭗ" effects:ChangeFontEffect.Font="materialdesignicons-webfont.ttf"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+         <!--Place new controls here--> 
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"/>
+        <Label Text="שּׂ" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" effects:ChangeFontEffect.Font="materialdesignicons-webfont.ttf"/>
+        <Label Text="" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" effects:ChangeFontEffect.Font="materialdesignicons-webfont.ttf"/>
+    </StackLayout>
+</ContentPage>
